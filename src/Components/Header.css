@@ -1,0 +1,89 @@
+#navlist {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+
+
+}
+
+.list:hover {
+  background-color: black;
+  color: white;
+}
+
+
+
+.list {
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* App.css for dark mode */
+.dark-mode body {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.toggle_icon {
+  width: 40px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.nav.menu {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.25rem;
+  height: 2rem;
+}
+
+.nav.menu span{
+  height: 0.4rem;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0.2rem;
+}
+
+@media (max-width: 1080px) {
+  nav .menu {
+      display: flex;
+  }
+
+  nav {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  nav ul {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 0.25rem;
+  }
+
+  nav ul.open {
+      display: flex;
+  }
+
+  nav ul li {
+      width: 100%;
+      text-align: center;
+  }
+
+  nav ul li a {
+      margin: 0.2rem 0.5rem;
+  }
+}
+
